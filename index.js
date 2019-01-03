@@ -1,7 +1,11 @@
+//Performing a task 
 function greet (name, lastName) {
     console.log('Hello ' + name + lastName);
 }
 
-greet('Paul', 'Southall');
+//Calculates a value 
+function squared (number){
+    return number * number
+}
 
-greet('steve',  'jobs');
+console.log(squared(2));
