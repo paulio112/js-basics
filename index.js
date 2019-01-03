@@ -1,6 +1,17 @@
-let name = 'Paulio'; // string literal
-let age = 30; // num literal
-let isApproved = true; // bool literal
-let firstName = undefined; // undefined. 
-let lastName = null; // null 
-console.log(firstName); 
+
+//let name = 'default';
+//let age = 50;
+
+let person = {
+    name: 'Paul',
+    age: 30
+};
+
+// Dot notation 
+person.name = 'Steve'
+
+// bracket notation
+let selection = 'name'; 
+//person[] = 'Rodger'
+
+console.log(selection);
