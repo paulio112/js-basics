@@ -1,4 +1,4 @@
-//Performing a task 
+/*//Performing a task 
 function greet (name, lastName) {
     console.log('Hello ' + name + lastName);
 }
@@ -8,4 +8,19 @@ function squared (number){
     return number * number
 }
 
-console.log(squared(2));
+//console.log(squared(2)); */
+
+
+let x = 10; 
+let y = 3; 
+
+// console.log(x + y);
+// console.log(x - y);
+// console.log(x * y);
+// console.log(x / y);
+// console.log(x ** y);
+// console.log(x % y);
+
+
+console.log(x++);
+console.log(x);
