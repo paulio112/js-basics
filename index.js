@@ -183,7 +183,7 @@ console.log(x == 11);*/
 //     console.log(key, person[key]);
 // }
 
-const colours = ["red", "yellow", "blue"];
+//const colours = ["red", "yellow", "blue"];
 
 // for (let index in colours) {
 //     console.log(index, colours[index]);
@@ -192,6 +192,24 @@ const colours = ["red", "yellow", "blue"];
 
 // For of example 
 
-for (let colour of colours) {
-    console.log (colour);
+// for (let colour of colours) {
+//     console.log (colour);
+// }
+
+
+let a = 3; 
+let b = 2;
+
+function comparisonTool () {
+
+    if (a > b) {
+        return a;
+    } else {
+        return b;
+    }
+
 }
+
+console.log(comparisonTool(a,b));
+
+
