@@ -64,16 +64,21 @@ console.log(x == 11);*/
 // console.log (1 % 2); // BitWise
 
 
-const readPermission =  4;
-const writePermission = 2; 
-const execute = 1; 
+// const readPermission =  4;
+// const writePermission = 2; 
+// const execute = 1; 
 
-let myPermission = 0; 
-myPermission = myPermission | readPermission | writePermission;
+// let myPermission = 0; 
+// myPermission = myPermission | readPermission | writePermission;
 
-console.log(myPermission);
+// console.log(myPermission);
 
-let message =
-(myPermission & readPermission) ? "Yes" : "no";
+// let message =
+// (myPermission & readPermission) ? "Yes" : "no";
 
-console.log(message);
+// console.log(message);
+
+
+
+let x = (2 + 3) * 4; 
+console.log (x);
