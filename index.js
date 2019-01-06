@@ -51,8 +51,29 @@ console.log(x == 11);*/
 // console.log('Application Refused.', applicationRefused);
 
 
-let userColour = null;
-let defaultColour = 'blue';
-let currentColour = userColour || defaultColour;
+// let userColour = null;
+// let defaultColour = 'blue';
+// let currentColour = userColour || defaultColour;
 
-console.log(currentColour);
+// console.log(currentColour);
+
+//BitWise oeprator 
+
+// //read, write or execite. 
+// console.log (1 | 2); // BitWise
+// console.log (1 % 2); // BitWise
+
+
+const readPermission =  4;
+const writePermission = 2; 
+const execute = 1; 
+
+let myPermission = 0; 
+myPermission = myPermission | readPermission | writePermission;
+
+console.log(myPermission);
+
+let message =
+(myPermission & readPermission) ? "Yes" : "no";
+
+console.log(message);
