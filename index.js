@@ -99,29 +99,49 @@ console.log(x == 11);*/
 // if hour is between 6am and 12pm: good morning 
 // else good evening.
 
-let hour = 19;
+// let hour = 19;
 
-if (hour >= 6 &&  hour < 12) 
- console.log ("good morning");
-else if (hour >= 12 && hour< 18) 
-    console.log("Good afternoon");
-else 
-    console.log("Good evening");
-
-
-    let role;
-    role = "guest";
+// if (hour >= 6 &&  hour < 12) 
+//  console.log ("good morning");
+// else if (hour >= 12 && hour< 18) 
+//     console.log("Good afternoon");
+// else 
+//     console.log("Good evening");
 
 
-    switch (role) {
-        case 'guest': 
-            console.log('guest');
-            break;
+//     let role;
+//     role = "guest";
+
+
+//     switch (role) {
+//         case 'guest': 
+//             console.log('guest');
+//             break;
         
-        case 'moderator':
-            console.log('moderator');
-            break;
+//         case 'moderator':
+//             console.log('moderator');
+//             break;
 
-        default :
-            console.log('unknown role');
+//         default :
+//             console.log('unknown role');
+//     }
+
+
+//For statement example
+
+for (let i = 0; i <= 5; i ++) {
+    if(i %2 !== 0) {
+        console.log (i + " is an odd number");    
     }
+    console.log ("I is the value of " + i );
+} 
+
+
+let a = 0;
+while (a <=5) {
+   // console.log ("a is " + a); 
+    if (a % 2 === 0) {
+        console.log ("A is an even number and the number is" + a);
+    }
+    a++;
+}
