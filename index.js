@@ -197,19 +197,21 @@ console.log(x == 11);*/
 // }
 
 
-let a = 3; 
-let b = 2;
+// let a = 5; 
+// let b = 5;
 
-function comparisonTool () {
+// function comparisonTool (a,b) {
+//     return (a > b) ? a : b;
+// }
 
-    if (a > b) {
-        return a;
-    } else {
-        return b;
-    }
+// console.log(comparisonTool(a,b));
 
+
+
+
+function isLandscape(width, height) {
+    return (width > height);
 }
 
-console.log(comparisonTool(a,b));
-
+console.log (isLandscape(12,11));
 
