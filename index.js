@@ -129,19 +129,33 @@ console.log(x == 11);*/
 
 //For statement example
 
-for (let i = 0; i <= 5; i ++) {
-    if(i %2 !== 0) {
-        console.log (i + " is an odd number");    
-    }
-    console.log ("I is the value of " + i );
-} 
+// for (let i = 0; i <= 5; i ++) {
+//     if(i %2 !== 0) {
+//         console.log (i + " is an odd number");    
+//     }
+//     console.log ("I is the value of " + i );
+// } 
 
 
-let a = 0;
-while (a <=5) {
-   // console.log ("a is " + a); 
-    if (a % 2 === 0) {
-        console.log ("A is an even number and the number is" + a);
+// let a = 0;
+// while (a <=5) {
+//    // console.log ("a is " + a); 
+//     if (a % 2 === 0) {
+//         console.log ("A is an even number and the number is" + a);
+//     }
+//     a++;
+// }
+
+
+// A do while example 
+
+let i = 9; 
+
+do {
+    if (i % 2 !== 0) {
+        console.log ("I is an even number and the number is " + i);
+        }
+        i++;
+    } while (i <= 5 ) {
+
     }
-    a++;
-}
