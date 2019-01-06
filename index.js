@@ -84,12 +84,26 @@ console.log(x == 11);*/
 // console.log (x);
 
 
-let a = "red";
-let b = "blue";
+// let a = "red";
+// let b = "blue";
 
-let c = a;
-a = b; 
-b = c;  
+// let c = a;
+// a = b; 
+// b = c;  
 
-console.log(a);
-console.log(b);
+// console.log(a);
+// console.log(b);
+
+
+// hour 
+// if hour is between 6am and 12pm: good morning 
+// else good evening.
+
+let hour = 19;
+
+if (hour >= 6 &&  hour < 12) 
+ console.log ("good morning");
+else if (hour >= 12 && hour< 18) 
+    console.log("Good afternoon");
+else 
+    console.log("Good evening");
