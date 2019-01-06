@@ -34,8 +34,18 @@ console.log(x == 11);*/
 
 // If statement example
 
-let points = 90;  
-let type = points > 100 ? 'Gold' : 'Silver';
+// let points = 90;  
+// let type = points > 100 ? 'Gold' : 'Silver';
 
 
-console.log(type);
+// console.log(type);
+
+
+//Logical operators example
+
+let highIncome = false; 
+let goodCreditScore = false; 
+let eligibleForLoan = highIncome || goodCreditScore;
+let applicationRefused  = !eligibleForLoan;
+
+console.log('Application Refused.', applicationRefused);
