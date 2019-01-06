@@ -43,9 +43,16 @@ console.log(x == 11);*/
 
 //Logical operators example
 
-let highIncome = false; 
-let goodCreditScore = false; 
-let eligibleForLoan = highIncome || goodCreditScore;
-let applicationRefused  = !eligibleForLoan;
+// let highIncome = false; 
+// let goodCreditScore = false; 
+// let eligibleForLoan = highIncome || goodCreditScore;
+// let applicationRefused  = !eligibleForLoan;
 
-console.log('Application Refused.', applicationRefused);
+// console.log('Application Refused.', applicationRefused);
+
+
+let userColour = null;
+let defaultColour = 'blue';
+let currentColour = userColour || defaultColour;
+
+console.log(currentColour);
