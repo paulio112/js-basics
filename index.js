@@ -149,13 +149,49 @@ console.log(x == 11);*/
 
 // A do while example 
 
-let i = 9; 
+// let i = 9; 
 
-do {
-    if (i % 2 !== 0) {
-        console.log ("I is an even number and the number is " + i);
-        }
-        i++;
-    } while (i <= 5 ) {
+// do {
+//     if (i % 2 !== 0) {
+//         console.log ("I is an even number and the number is " + i);
+//         }
+//         i++;
+//     } while (i <= 5 ) {
 
-    }
+//     }
+
+
+// let i = 0 
+//     while (i < 5 ){
+//         console.log (i + ' is the value of i');
+//     }
+
+
+// for
+//while 
+//do  while 
+
+// for in loop
+
+// const person = {
+//     name:"mosh",
+//     age: 30
+// };
+
+
+// for (let key in person) {
+//     console.log(key, person[key]);
+// }
+
+const colours = ["red", "yellow", "blue"];
+
+// for (let index in colours) {
+//     console.log(index, colours[index]);
+//     console.log (index + " <--- index is");
+// }
+
+// For of example 
+
+for (let colour of colours) {
+    console.log (colour);
+}
