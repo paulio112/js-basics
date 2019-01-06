@@ -24,3 +24,9 @@ let y = 3;
 
 console.log(x++);
 console.log(x);
+
+
+// comparison 
+
+console.log (x >= 12);
+console.log(x == 11);
