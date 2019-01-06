@@ -8,7 +8,7 @@ function squared (number){
     return number * number
 }
 
-//console.log(squared(2)); */
+//console.log(squared(2)); 
 
 
 let x = 10; 
@@ -29,4 +29,13 @@ console.log(x);
 // comparison 
 
 console.log (x >= 12);
-console.log(x == 11);
+console.log(x == 11);*/
+
+
+// If statement example
+
+let points = 90;  
+let type = points > 100 ? 'Gold' : 'Silver';
+
+
+console.log(type);
