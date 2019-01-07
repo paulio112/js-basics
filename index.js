@@ -319,19 +319,76 @@ console.log(x == 11);*/
 
 //show properties of object type string. 
 
-const movie = {
-    title: 'Top gun', 
-    releaseYear: 1990,
-    ratin:5,
-    director:'Spielberg'
-};
+// const movie = {
+//     title: 'Top gun', 
+//     releaseYear: 1990,
+//     ratin:5,
+//     director:'Spielberg'
+// };
 
-showProperties(movie);
+// showProperties(movie);
 
-function showProperties (obj) {
+// function showProperties (obj) {
     
-   for (let key in obj) {
-       if (typeof obj[key] === 'string') 
-           console.log(key,obj[key]);
-   }
+//    for (let key in obj) {
+//        if (typeof obj[key] === 'string') 
+//            console.log(key,obj[key]);
+//    }
+// }
+
+
+
+// Sum limit it will return the sum of all the mutliples of the 3 and 5 up to this limit
+
+// console.log(sum(10));
+
+// function sum (limit) {
+//     let sum = 0;
+    
+//     for (let i = 0; i <= limit;  i++) 
+//         if (i % 3 === 0 || i % 5 === 0)
+//         sum += i ; 
+    
+//     return sum;    
+// }
+
+/// Grade calculation example= 
+
+// Average work out = 70
+
+// 1-59 F
+// 60-69 D
+// 70 - 79 C
+// 80 - 89 B
+// 90 - 100 A
+
+const marks = [80,80,50];
+
+
+
+function calculateGrade(marks) {
+    let sum = 0;
+    let count = 0;
+
+     for (let key in marks) {
+         sum = sum + marks[key];
+         count ++;  
+     }
+
+     let av = sum / count;
+   //  console.log('The average number is',  av); 
+
+    if (av <= 59)
+        console.log('You got an F');
+    if ((av >= 60) && (av <= 69))
+        console.log('You got an D');
+    if ((av >= 70) && (av <= 79))
+        console.log('You got an C');
+    if ((av >= 80) && (av <= 89))
+        console.log('You got an B');
+    if ((av >= 89))
+        console.log('You got an A bro #yolo');
+
 }
+
+console.log(calculateGrade(marks));
