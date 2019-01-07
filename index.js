@@ -209,9 +209,39 @@ console.log(x == 11);*/
 
 
 
-function isLandscape(width, height) {
-    return (width > height);
-}
+// function isLandscape(width, height) {
+//     return (width > height);
+// }
 
-console.log (isLandscape(12,11));
+// console.log (isLandscape(12,11));
 
+
+
+
+// Fizz/buzz example 
+//divisible by 3 = fizz
+//divisbile by 5 = buzz
+//divisble by both 3 and 5 = fizzbuzz
+// else output the number 
+// if an input is not a number = output type of with that.
+
+
+function fizzBuzz (input){
+
+    if (typeof input !== 'number') 
+        return 'not a number';
+    
+
+    if ((input % 3 == 0) && (input % 5 == 0) ) 
+        return "THE number is " + input;    
+
+    if (input % 3 === 0) 
+        return 'fizz';
+
+    if (input % 5 === 0) 
+        return 'buzz';
+    
+    return input;
+    }
+
+console.log(fizzBuzz(7));
