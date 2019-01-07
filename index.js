@@ -256,24 +256,29 @@ console.log(x == 11);*/
 // 12points is ->  a suspension.
 
 
-function checkSpeed(speed) {
-    const speedLimit = 70;
-    const mphPerPoint = 5;
+// function checkSpeed(speed) {
+//     const speedLimit = 70;
+//     const mphPerPoint = 5;
 
-        if(speed <= speedLimit) {
-            console.log('ok');
-            return;
-        }
+//         if(speed <= speedLimit) {
+//             console.log('ok');
+//             return;
+//         }
         
-        let points = Math.floor((speed - speedLimit) / mphPerPoint);
-        if (points >= 12) {
-            console.log('Licence Suspended');
-            } else {
-                console.log('Points = ', points) 
-            }
-        }
+//         let points = Math.floor((speed - speedLimit) / mphPerPoint);
+//         if (points >= 12) {
+//             console.log('Licence Suspended');
+//             } else {
+//                 console.log('Points = ', points) 
+//             }
+//         }
     
-checkSpeed(80);
+// checkSpeed(80);
+
+
+
+
+
 
 
 
@@ -293,3 +298,19 @@ checkSpeed(80);
 //         console.log('Number --> ' + x );
 //     }     
 // }
+
+
+// show numbers on odd or even upto number supplied. 
+
+
+function showNumbers(limit) {
+
+    for(let i = 0; i <= limit;  i++) {
+        if (i % 2 === 0) 
+            console.log(i + ' is even');
+         else 
+            console.log(i + ' is odd');        
+    }
+}
+
+showNumbers(100);
