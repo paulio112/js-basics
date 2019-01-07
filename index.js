@@ -226,22 +226,70 @@ console.log(x == 11);*/
 // if an input is not a number = output type of with that.
 
 
-function fizzBuzz (input){
+// function fizzBuzz (input){
 
-    if (typeof input !== 'number') 
-        return 'not a number';
+//     if (typeof input !== 'number') 
+//         return 'not a number';
+
+//     if ((input % 3 == 0) && (input % 5 == 0) ) 
+//         return "THE number is " + input;    
+
+//     if (input % 3 === 0) 
+//         return 'fizz';
+
+//     if (input % 5 === 0) 
+//         return 'buzz';
     
+//     return input;
+//     }
 
-    if ((input % 3 == 0) && (input % 5 == 0) ) 
-        return "THE number is " + input;    
+// console.log(fizzBuzz(7));
 
-    if (input % 3 === 0) 
-        return 'fizz';
 
-    if (input % 5 === 0) 
-        return 'buzz';
+// A spedometer example
+
+// limit is 70 
+// under gets an OK message at 70 and below
+// every 5 km above they get 1 point. 
+// 72km
+//math.floor(1.3)
+// 12points is ->  a suspension.
+
+
+function checkSpeed(speed) {
+    const speedLimit = 70;
+    const mphPerPoint = 5;
+
+        if(speed <= speedLimit) {
+            console.log('ok');
+            return;
+        }
+        
+        let points = Math.floor((speed - speedLimit) / mphPerPoint);
+        if (points >= 12) {
+            console.log('Licence Suspended');
+            } else {
+                console.log('Points = ', points) 
+            }
+        }
     
-    return input;
-    }
+checkSpeed(80);
 
-console.log(fizzBuzz(7));
+
+
+/// Scott sample 
+// fizbuzz when % 15 
+// fizz when 5
+// buzz when 3
+
+// for (let x = 1; x < 100; x++) {
+//     if(x % 15 === 0 ) {  
+//         console.log('FizzBuzz');
+//     } else if (x  % 5 === 0) {
+//         console.log('fizz'); 
+//     } else if (x % 3 === 0) {
+//         console.log('buzz');
+//     }  else {
+//         console.log('Number --> ' + x );
+//     }     
+// }
