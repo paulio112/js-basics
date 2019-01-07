@@ -303,14 +303,35 @@ console.log(x == 11);*/
 // show numbers on odd or even upto number supplied. 
 
 
-function showNumbers(limit) {
+// function showNumbers(limit) {
 
-    for(let i = 0; i <= limit;  i++) {
-        if (i % 2 === 0) 
-            console.log(i + ' is even');
-         else 
-            console.log(i + ' is odd');        
-    }
+//     for(let i = 0; i <= limit;  i++) {
+//         if (i % 2 === 0) 
+//             console.log(i + ' is even');
+//          else 
+//             console.log(i + ' is odd');        
+//     }
+// }
+
+// showNumbers(100);
+
+//String Example 
+
+//show properties of object type string. 
+
+const movie = {
+    title: 'Top gun', 
+    releaseYear: 1990,
+    ratin:5,
+    director:'Spielberg'
+};
+
+showProperties(movie);
+
+function showProperties (obj) {
+    
+   for (let key in obj) {
+       if (typeof obj[key] === 'string') 
+           console.log(key,obj[key]);
+   }
 }
-
-showNumbers(100);
