@@ -362,33 +362,49 @@ console.log(x == 11);*/
 // 80 - 89 B
 // 90 - 100 A
 
-const marks = [80,80,50];
+// const marks = [80,80,50];
 
 
 
-function calculateGrade(marks) {
-    let sum = 0;
-    let count = 0;
+// function calculateGrade(marks) {
+//     let sum = 0;
+//     let count = 0;
 
-     for (let key in marks) {
-         sum = sum + marks[key];
-         count ++;  
-     }
+//      for (let key in marks) {
+//          sum = sum + marks[key];
+//          count ++;  
+//      }
 
-     let av = sum / count;
-   //  console.log('The average number is',  av); 
+//      let av = sum / count;
+//    //  console.log('The average number is',  av); 
 
-    if (av <= 59)
-        console.log('You got an F');
-    if ((av >= 60) && (av <= 69))
-        console.log('You got an D');
-    if ((av >= 70) && (av <= 79))
-        console.log('You got an C');
-    if ((av >= 80) && (av <= 89))
-        console.log('You got an B');
-    if ((av >= 89))
-        console.log('You got an A bro #yolo');
+//     if (av <= 59)
+//         console.log('You got an F');
+//     if ((av >= 60) && (av <= 69))
+//         console.log('You got an D');
+//     if ((av >= 70) && (av <= 79))
+//         console.log('You got an C');
+//     if ((av >= 80) && (av <= 89))
+//         console.log('You got an B');
+//     if ((av >= 89))
+//         console.log('You got an A bro #yolo');
 
+// }
+
+// console.log(calculateGrade(marks)); 
+
+
+
+// function to output stars based on the count amount of lines example. 
+
+
+showStars(10); 
+
+function showStars(input) {
+    let textToOutput = '*';
+
+    for (i = 0; i <= input;  i++) {
+        console.log(textToOutput.repeat(i)); 
+    }
 }
 
-console.log(calculateGrade(marks));
