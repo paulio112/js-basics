@@ -22,14 +22,26 @@
 
 // factory fucntion 
 
-function createCircle(radius){
-    return {
-        radius,
+// function createCircle(radius){
+//     return {
+//         radius,
 
-        draw() {  
-            console.log('draw method');
-        }
-    }; 
+//         draw() {  
+//             console.log('draw method');
+//         }
+//     }; 
+// }
+// const circle1 = createCircle(1);
+// console.log(circle1);
+
+// section 5 - lection 50 - constructor function
+//PAscal convention
+
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw');
+    }
 }
-const circle1 = createCircle(1);
-console.log(circle1);
+
+const circle = new Circle(1);
