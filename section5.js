@@ -214,11 +214,63 @@
 
 //Constructur function 
 
-function Address (street,city,zipcode) {
-    this.street = street,
-    this.city = city,
-    this.zipcode =zipcode
-}
+// function Address (street,city,zipcode) {
+//     this.street = street,
+//     this.city = city,
+//     this.zipcode =zipcode
+// }
 
-let address = new Address(1,2,3);
-console.log(address);
+// let address = new Address(1,2,3);
+// console.log(address);
+
+
+// // Exercise 3 
+
+// //create 2 objects for below function use. 
+// let address1 = new Address(1,2,3);
+// let address2 = new Address(1,2,3);
+
+// function Address (street,city,zipcode) {
+//     this.street = street,
+//     this.city = city,
+//     this.zipcode = zipcode
+// }
+
+// // Are the values the same? 
+// function areEqual (address1,address2) {
+//     return address1.street === address2.street &&
+//      address1.city === address2.city && 
+//      address1.zipcode === address2.zipcde  
+// }
+
+// // Are the reference points the same?  
+// function areSame (address1,address2) {
+//     return address1 === address2;
+// }
+
+
+// console.log(areEqual(address1,address2));
+// console.log(areSame(address1,address2));
+
+//Exercise 4 - Creating a blog post and outputting it.
+//title
+//body
+//author
+//views
+//comments 
+////// author 
+////// body
+// is live
+
+const blogPost = {
+    title:'Test title', 
+    body: 'test body',
+    author: 'test author',
+    views:  10,
+    commments: [
+        {author:'Test Comment Author', body: 'Test comment body'}
+    ],
+    isLive: true
+};
+
+console.log(blogPost);
