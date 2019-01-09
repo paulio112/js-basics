@@ -79,11 +79,36 @@
 
 // lection 54 - Values types vs reference types ;
 
-let obj = {value:10};
+// let obj = {value:10};
 
-function increase(obj) {
-    obj.value++
+// function increase(obj) {
+//     obj.value++
+// }
+
+// increase(obj);
+// console.log(obj);
+
+
+//lecture 55 - 
+
+const circle = {
+    radius: 1, 
+    draw() {
+        console.log('draw');
+    }
+};
+
+
+// for (let key in circle) 
+//     console.log(key, circle[key]);
+
+// for (let key of Object.keys(circle)) 
+//     console.log(key);
+
+for (let entry of Object.entries(circle)) 
+    console.log(entry);
+
+
+if ('colour' in circle) {
+    console.log('yes');
 }
-
-increase(obj);
-console.log(obj);
