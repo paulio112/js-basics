@@ -116,17 +116,42 @@
 
 //Section 5 - lecture 56 = Cloning an object
 
-const circle = {
-    radius: 1, 
-    draw() {
-        console.log('draw');
-    }
-};
+// const circle = {
+//     radius: 1, 
+//     draw() {
+//         console.log('draw');
+//     }
+// };
 
-// const another = {};
+// // const another = {};
 
-// for (let key in circle)
-//     another[key] = circle[key];
+// // for (let key in circle)
+// //     another[key] = circle[key];
 
-const another = {...circle};
-console.log (another);
+// const another = {...circle};
+// console.log (another);
+
+//section 5:  lecture 57 - garbage collection.
+
+// let circle = {}; 
+// console.log(circle);
+
+
+// section5 : lecture 58  - Math object: quick demo 
+
+// console.log(Math.random);
+// math.round
+//math.max 
+// math.min 
+
+//section5 : lecture 59. 
+
+// const message = 'this is my first message';
+// console.log(message[12]);
+
+//section 6: lecture 60 - Template literals
+
+const message = `This is my 
+'first' message`;
+
+console.log(message);
