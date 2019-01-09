@@ -91,12 +91,12 @@
 
 //lecture 55 - 
 
-const circle = {
-    radius: 1, 
-    draw() {
-        console.log('draw');
-    }
-};
+// const circle = {
+//     radius: 1, 
+//     draw() {
+//         console.log('draw');
+//     }
+// };
 
 
 // for (let key in circle) 
@@ -105,10 +105,28 @@ const circle = {
 // for (let key of Object.keys(circle)) 
 //     console.log(key);
 
-for (let entry of Object.entries(circle)) 
-    console.log(entry);
+// for (let entry of Object.entries(circle)) 
+//     console.log(entry);
 
 
-if ('colour' in circle) {
-    console.log('yes');
-}
+// if ('colour' in circle) {
+//     console.log('yes');
+// }
+
+
+//Section 5 - lecture 56 = Cloning an object
+
+const circle = {
+    radius: 1, 
+    draw() {
+        console.log('draw');
+    }
+};
+
+// const another = {};
+
+// for (let key in circle)
+//     another[key] = circle[key];
+
+const another = {...circle};
+console.log (another);
