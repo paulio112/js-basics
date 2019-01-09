@@ -62,13 +62,28 @@
 // Dynamic object example. 
 // 
 
-const circle = {
-    radius: 1
-};  
+// const circle = {
+//     radius: 1
+// };  
 
 
-circle.colour = 'Yellow';
-circle.draw = function() {}
+// circle.colour = 'Yellow';
+// circle.draw = function() {}
 
-delete circle.colour;
-console.log(circle);
+// delete circle.colour;
+// console.log(circle);
+
+
+// lection 53 ;
+
+
+// lection 54 - Values types vs reference types ;
+
+let obj = {value:10};
+
+function increase(obj) {
+    obj.value++
+}
+
+increase(obj);
+console.log(obj);
