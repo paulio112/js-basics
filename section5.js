@@ -48,12 +48,27 @@
 // }
 
 //constructer function
-function Circle (radius) {
-    this.radius = radius;
-    this.draw = function() {
-        console.log('draw');
-    }
-}
+// function Circle (radius) {
+//     this.radius = radius;
+//     this.draw = function() {
+//         console.log('draw');
+//     }
+// }
 
-const circle = new Circle(1)
+// const circle = new Circle(1)
+// console.log(circle);
+
+
+// Dynamic object example. 
+// 
+
+const circle = {
+    radius: 1
+};  
+
+
+circle.colour = 'Yellow';
+circle.draw = function() {}
+
+delete circle.colour;
 console.log(circle);
