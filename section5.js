@@ -175,15 +175,50 @@
 //Function showaddress(); 
 
 
-const address = {
-    street:'Test Street',
-    city: 'Test City', 
-    zipcode: 'WV4 6QY'
-}; 
+// const address = {
+//     street:'Test Street',
+//     city: 'Test City', 
+//     zipcode: 'WV4 6QY'
+// }; 
 
-function showAddress (address) {
-    for (let key in address)
-        console.log(key,  address[key]);
+// function showAddress (address) {
+//     for (let key in address)
+//         console.log(key,  address[key]);
+// }
+
+// showAddress(address);
+
+
+//exercise 2. 
+
+
+// const address = {
+//      street:'Test Street',
+//      city: 'Test City', 
+//      zipcode: 'WV4 6QY'
+//  }; 
+
+
+//factory function
+//  function createAddress(street,city,zipcode) {
+//      return {
+//         street,
+//         city, 
+//         zipcode
+//      }
+//  }
+
+
+//  let address = createAddress(1,2,3);
+//  console.log(address);
+
+//Constructur function 
+
+function Address (street,city,zipcode) {
+    this.street = street,
+    this.city = city,
+    this.zipcode =zipcode
 }
 
-showAddress(address);
+let address = new Address(1,2,3);
+console.log(address);
