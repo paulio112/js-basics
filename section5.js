@@ -151,7 +151,39 @@
 
 //section 6: lecture 60 - Template literals
 
-const message = `This is my 
-'first' message`;
+// const message = `This is my 
+// 'first' message`;
 
-console.log(message);
+// console.log(message);
+
+
+// Lecture 61
+
+// const now = new Date();
+// const date1 = new Date(2018, 0 , 1);
+// console.log(date1);
+
+
+// now.setFullYear(2010);
+
+
+// Section 5 -  Exercise 1: Scope.  
+
+//street
+//city
+//zipcode
+//Function showaddress(); 
+
+
+const address = {
+    street:'Test Street',
+    city: 'Test City', 
+    zipcode: 'WV4 6QY'
+}; 
+
+function showAddress (address) {
+    for (let key in address)
+        console.log(key,  address[key]);
+}
+
+showAddress(address);
