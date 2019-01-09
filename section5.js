@@ -37,11 +37,23 @@
 // section 5 - lection 50 - constructor function
 //PAscal convention
 
-function Circle(radius) {
+
+// function createCircle(radius){
+//     return {
+//         radius, 
+//         draw(){
+//             console.log('draw');
+//         }
+//     }
+// }
+
+//constructer function
+function Circle (radius) {
     this.radius = radius;
     this.draw = function() {
         console.log('draw');
     }
 }
 
-const circle = new Circle(1);
+const circle = new Circle(1)
+console.log(circle);
