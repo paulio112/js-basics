@@ -41,11 +41,25 @@
 
 //lecture 72 - arrow functions
 
-const courses = [
-    { id: 1, name:  'a'},
-    { id: 2, name:  'b'},
-]; 
+// const courses = [
+//     { id: 1, name:  'a'},
+//     { id: 2, name:  'b'},
+// ]; 
 
-const course = courses.find(course => course.name === 'b');
+// const course = courses.find(course => course.name === 'b');
 
-console.log(course);
+// console.log(course);
+
+//lecture 72 = removing elements from an array
+
+const numbers = [1,2,3,4]; 
+//const last = numbers.pop ();
+// console.log(numbers);
+// console.log(last);
+
+// const first = numbers.shift();
+// console.log(numbers);
+// console.log(first);
+
+numbers.splice(0,2);
+console.log(numbers);
