@@ -66,16 +66,24 @@
 
 //empty an array lecture 74
 
-let numbers = [1,2,3,4];
-let another =  numbers;
-// numbers = [];
+// let numbers = [1,2,3,4];
+// let another =  numbers;
+// // numbers = [];
 
-//numbers.length = 0;
+// //numbers.length = 0;
 
-//numbers.splice(0, numbers.length);
+// //numbers.splice(0, numbers.length);
 
-while (numbers.length > 0)
-    numbers.pop()
+// while (numbers.length > 0)
+//     numbers.pop()
 
+// //console.log(numbers);
 
-//console.log(numbers);
+//lecture 75 - combining and slicing arrays.
+
+const first = [{id:1}]; 
+const second = [4,5,6];
+
+const combined = first.concat(second);
+const slice = combined.slice(2);
+console.log(slice);
