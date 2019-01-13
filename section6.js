@@ -100,9 +100,25 @@
 
 //Lecture 77 - iterating the array. 
 
-const numbers = [1,2,3]; 
+// const numbers = [1,2,3]; 
 
-// for (let number of numbers) 
-//     console.log(number);
+// // for (let number of numbers) 
+// //     console.log(number);
 
-numbers.forEach((number,index) => console.log(number,index ));
+// numbers.forEach((number,index) => console.log(number,index ));
+
+
+// lecture 78 - join arrays 
+
+const numbers = [1,2,3];
+const joined = numbers.join(',');
+
+console.log(joined);
+
+const message = 'This is my first message';
+const parts = message.split(' ');
+
+console.log(parts);
+
+const combined = parts.join('-');
+console.log(combined);
