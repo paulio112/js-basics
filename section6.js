@@ -22,19 +22,30 @@
 
 // lecture 71 - finding reference types 
 
+// const courses = [
+//     { id: 1, name:  'a'},
+//     { id: 2, name:  'b'},
+// ]; 
+
+// //console.log(courses.includes({id:1, name:'a'}));
+
+// const course = courses.findIndex(function(course) {
+//     return course.name === 'a';
+// }); 
+
+// console.log(course);
+//console.log(numbers.indexOf(1));
+//console.log(numbers.lastIndexOf(1));
+
+
+
+//lecture 72 - arrow functions
+
 const courses = [
     { id: 1, name:  'a'},
     { id: 2, name:  'b'},
 ]; 
 
-//console.log(courses.includes({id:1, name:'a'}));
-
-const course = courses.findIndex(function(course) {
-    return course.name === 'a';
-}); 
+const course = courses.find(course => course.name === 'b');
 
 console.log(course);
-
-
-//console.log(numbers.indexOf(1));
-//console.log(numbers.lastIndexOf(1));
