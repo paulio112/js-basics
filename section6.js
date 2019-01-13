@@ -90,10 +90,19 @@
 
 //Lecture 76 = es6 version of slice/combine. 
 
-const first = [1,2,3]; 
-const second = [4,5,6];
+// const first = [1,2,3]; 
+// const second = [4,5,6];
 
-const combined = [...first, 'hello ',...second];
-const copy =  [...combined];
+// const combined = [...first, 'hello ',...second];
+// const copy =  [...combined];
 
 //console.log(combined);
+
+//Lecture 77 - iterating the array. 
+
+const numbers = [1,2,3]; 
+
+// for (let number of numbers) 
+//     console.log(number);
+
+numbers.forEach((number,index) => console.log(number,index ));
