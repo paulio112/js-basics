@@ -121,27 +121,38 @@
 // console.log(parts);
 
 // const combined = parts.join('-');
-// console.log(combined);
+// // console.log(combined);
 
 
-// Lecture 79 - Sorting Arrays
+// // Lecture 79 - Sorting Arrays
 
-const courses = [
-    {id:1, name: 'Node.js'},
-    {id:2, name: 'javascript'},
-];
+// const courses = [
+//     {id:1, name: 'Node.js'},
+//     {id:2, name: 'javascript'},
+// ];
 
-courses.sort(function(a,b) {
-    // a < b => -1 
-    // a > b => 1
-    // a === b =>
+// courses.sort(function(a,b) {
+//     // a < b => -1 
+//     // a > b => 1
+//     // a === b =>
     
-    const nameA = a.name.toUpperCase();
-    const nameB = b.name.toUpperCase();
+//     const nameA = a.name.toUpperCase();
+//     const nameB = b.name.toUpperCase();
 
-    if (nameA < nameB) return -1;
-    if (nameA > nameB) return 1;
-    retrun 
-});
+//     if (nameA < nameB) return -1;
+//     if (nameA > nameB) return 1;
+//     retrun 
+// });
 
-console.log(courses);
+// console.log(courses);
+
+
+// Lexture 80 
+
+const numbers = [-1,-1,-2,-3]; 
+
+const atLeastOnePostive = numbers.some(function(value) {
+    return value >= 0;
+})
+
+console.log(atLeastOnePostive); 
