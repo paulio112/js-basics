@@ -262,15 +262,35 @@
 ////// body
 // is live
 
-const blogPost = {
-    title:'Test title', 
-    body: 'test body',
-    author: 'test author',
-    views:  10,
-    commments: [
-        {author:'Test Comment Author', body: 'Test comment body'}
-    ],
-    isLive: true
-};
+// const blogPost = {
+//     title:'Test title', 
+//     body: 'test body',
+//     author: 'test author',
+//     views:  10,
+//     commments: [
+//         {author:'Test Comment Author', body: 'Test comment body'}
+//     ],
+//     isLive: true
+// };
 
-console.log(blogPost);
+// console.log(blogPost);
+
+
+//Exercise 5 - Constructor fucntion -
+// Build a function to check if show we should display a blog article.  
+
+
+
+// function Post(title,body,author) {
+//     this.title = title; 
+//     this.body = body;
+//     this.author = author; 
+//     this.views = 0;
+//     this.comments = [];
+//     this.isLive = false;    
+// }
+
+// let post = new Post ('a','b','c');
+// console.log(post);
+
+// last exercise on this section for objects. 
