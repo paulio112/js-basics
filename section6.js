@@ -15,6 +15,26 @@
 
 // lecture 70 - finding primitives 
 
-const numbers = [1,2,3,1,4]; 
+// const numbers = [1,2,3,1,4]; 
+// //console.log(numbers.indexOf(1));
+// console.log(numbers.lastIndexOf(1));
+
+
+// lecture 71 - finding reference types 
+
+const courses = [
+    { id: 1, name:  'a'},
+    { id: 2, name:  'b'},
+]; 
+
+//console.log(courses.includes({id:1, name:'a'}));
+
+const course = courses.findIndex(function(course) {
+    return course.name === 'a';
+}); 
+
+console.log(course);
+
+
 //console.log(numbers.indexOf(1));
-console.log(numbers.lastIndexOf(1));
+//console.log(numbers.lastIndexOf(1));
