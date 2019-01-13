@@ -149,10 +149,18 @@
 
 // Lexture 80 
 
-const numbers = [-1,-1,-2,-3]; 
+// const numbers = [-1,-1,-2,-3]; 
 
-const atLeastOnePostive = numbers.some(function(value) {
-    return value >= 0;
-})
+// const atLeastOnePostive = numbers.some(function(value) {
+//     return value >= 0;
+// })
 
-console.log(atLeastOnePostive); 
+// console.log(atLeastOnePostive); 
+
+//Lecture 81 = Filtering an array
+
+const numbers = [-11,2,3]; 
+
+const filtered = numbers.filter(n => n >= 0); 
+
+console.log(filtered);
