@@ -110,15 +110,38 @@
 
 // lecture 78 - join arrays 
 
-const numbers = [1,2,3];
-const joined = numbers.join(',');
+// const numbers = [1,2,3];
+// const joined = numbers.join(',');
 
-console.log(joined);
+// console.log(joined);
 
-const message = 'This is my first message';
-const parts = message.split(' ');
+// const message = 'This is my first message';
+// const parts = message.split(' ');
 
-console.log(parts);
+// console.log(parts);
 
-const combined = parts.join('-');
-console.log(combined);
+// const combined = parts.join('-');
+// console.log(combined);
+
+
+// Lecture 79 - Sorting Arrays
+
+const courses = [
+    {id:1, name: 'Node.js'},
+    {id:2, name: 'javascript'},
+];
+
+courses.sort(function(a,b) {
+    // a < b => -1 
+    // a > b => 1
+    // a === b =>
+    
+    const nameA = a.name.toUpperCase();
+    const nameB = b.name.toUpperCase();
+
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return 1;
+    retrun 
+});
+
+console.log(courses);
