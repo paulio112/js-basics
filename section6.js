@@ -81,9 +81,19 @@
 
 //lecture 75 - combining and slicing arrays.
 
-const first = [{id:1}]; 
+// const first = [{id:1}]; 
+// const second = [4,5,6];
+
+// const combined = first.concat(second);
+// const slice = combined.slice(2);
+// console.log(slice);
+
+//Lecture 76 = es6 version of slice/combine. 
+
+const first = [1,2,3]; 
 const second = [4,5,6];
 
-const combined = first.concat(second);
-const slice = combined.slice(2);
-console.log(slice);
+const combined = [...first, 'hello ',...second];
+const copy =  [...combined];
+
+//console.log(combined);
