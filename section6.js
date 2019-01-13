@@ -182,19 +182,45 @@
 // console.log(items);
 
 // Lecture 83 = Reducing an array 
+// const numbers = [110,3]; 
+// // let sum = 0;
 
-const numbers = [110,3]; 
+// // for (let n of numbers)
+// //     sum += n; 
 
-// let sum = 0; 
+// //     console.log(sum);
 
-// for (let n of numbers)
-//     sum += n; 
+// // A = 0; c = 110 
+// const sum = numbers.reduce(
+//     (accumulator,currentVale) => accumulator + currentVale
+// );
 
-//     console.log(sum);
+// console.log(sum);
 
-// A = 0; c = 110 
-const sum = numbers.reduce(
-    (accumulator,currentVale) => accumulator + currentVale
-);
+//Exercise 1 array form a range
 
-console.log(sum);
+// const numbers = arrayFromRange(1,4);
+
+// console.log(numbers);
+
+// function arrayFromRange(min,max) {
+//     const output = [];
+//     for (let i = min;  i <= max;  i++);
+//         output.push(i);
+
+//     return output;
+// }
+
+
+//Exercise search array 
+
+const numbers = [1,2,3,4];
+
+function includes(array,searchElement){
+        for (let element of array) 
+            if(element === searchElement)
+            return true; 
+        return false;  
+}
+
+console.log(includes(numbers,-1));
