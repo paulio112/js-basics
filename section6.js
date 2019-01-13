@@ -52,7 +52,7 @@
 
 //lecture 72 = removing elements from an array
 
-const numbers = [1,2,3,4]; 
+//const numbers = [1,2,3,4]; 
 //const last = numbers.pop ();
 // console.log(numbers);
 // console.log(last);
@@ -61,5 +61,21 @@ const numbers = [1,2,3,4];
 // console.log(numbers);
 // console.log(first);
 
-numbers.splice(0,2);
-console.log(numbers);
+// numbers.splice(0,2);
+// console.log(numbers);
+
+//empty an array lecture 74
+
+let numbers = [1,2,3,4];
+let another =  numbers;
+// numbers = [];
+
+//numbers.length = 0;
+
+//numbers.splice(0, numbers.length);
+
+while (numbers.length > 0)
+    numbers.pop()
+
+
+//console.log(numbers);
