@@ -159,8 +159,24 @@
 
 //Lecture 81 = Filtering an array
 
-const numbers = [-11,2,3]; 
+// const numbers = [-11,2,3]; 
 
-const filtered = numbers.filter(n => n >= 0); 
+// const filtered = numbers.filter(n => n >= 0); 
 
-console.log(filtered);
+// console.log(filtered);
+
+// Lecture 81 =  Mapping an array
+
+
+const numbers = [1,-1,2,3]; 
+const items = numbers 
+    .filter(n => n >= 0)
+    .map(n => ({value: n}))
+    .filter(obj => obj.value >= 1)
+    .map(obj => obj.value);
+
+//const filtered = numbers.filter(n => n >= 0); 
+//const items = filtered.map(n => ({value: n}));
+// const html = '<ul>' + items.join('') + '</ul>';
+
+console.log(items);
