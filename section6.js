@@ -68,16 +68,16 @@
 
 // let numbers = [1,2,3,4];
 // let another =  numbers;
-// // numbers = [];
+// numbers = [];
 
-// //numbers.length = 0;
+// numbers.length = 0;
 
-// //numbers.splice(0, numbers.length);
+// numbers.splice(0, numbers.length);
 
-// while (numbers.length > 0)
+//while (numbers.length > 0)
 //     numbers.pop()
 
-// //console.log(numbers);
+//console.log(numbers);
 
 //lecture 75 - combining and slicing arrays.
 
@@ -214,13 +214,75 @@
 
 //Exercise search array 
 
-const numbers = [1,2,3,4];
+// const numbers = [1,2,3,4];
 
-function includes(array,searchElement){
-        for (let element of array) 
-            if(element === searchElement)
-            return true; 
-        return false;  
+// function includes(array,searchElement){
+//         for (let element of array) 
+//             if(element === searchElement)
+//             return true; 
+//         return false;  
+// }
+
+// console.log(includes(numbers,-1));
+
+// const numbers = arrayFromRange(-10,-4);
+
+// console.log (numbers);
+
+// function arrayFromRange(min,max) {
+//     const output = [];
+//     for (let i = min; i <= max;  i++) {
+//         output.push(i);
+//     }
+//     return output;
+// }
+
+
+//exercise 2 example 
+
+// const numbers = [1,2,3,4]; 
+// console.log(includes(numbers,3));
+
+// function includes (array, searchElement) {
+//     for (let key of array) {
+//         if (key === searchElement)
+//             return true;
+//     }
+//     return false; 
+// }
+
+//exercise 3 example -
+
+// const numbers = [1,2,3,4];
+// const output = except(numbers,[1,2]);
+
+// console.log(output);
+
+// function except(array, excluded) {
+//     const output = [];
+//     for (let element of array) {
+//         if (!excluded.includes(element))
+//             output.push(element);      
+//     }
+//     return output;
+// }
+
+//Exerice 4 - moving an array element.
+
+const numbers = [1,2,3,4];
+const output = move(numbers,1,2); 
+console.log(output);
+
+function move (array,index,offset) {
+    const position = index + offset;  
+    if (position >= array.length || position <= 0){
+        console.error('invalid offset');
+        return;
+    }
+
+    const output = [...array];
+    const element = output.splice(index,1)[0];
+    output.splice(index + offset, 0, element);
+    return output;
 }
 
-console.log(includes(numbers,-1));
