@@ -303,13 +303,37 @@
 
 // Get max number in array 
 
-const numbers = [1,2,20,4];
-const max = getMax(numbers);
+// const numbers = [1,2,20,4];
+// const max = getMax(numbers);
 
-function getMax(array) {
-   if (array.length === 0) return undefined;
+// function getMax(array) {
+//    if (array.length === 0) return undefined;
 
-    return array.reduce((a, b) => (a > b) ? a : b); 
-}
+//     return array.reduce((a, b) => (a > b) ? a : b); 
+// }
 
-console.log(max);
+// console.log(max);
+
+//exercise movies;
+
+const movies = [
+    {title:'a', year: 2018,  rating:4.5},
+    {title:'b', year: 2018,  rating:4.57},
+    {title:'c', year: 2018,  rating:3},
+    {title:'d', year: 2017,  rating:4.5}
+];
+
+
+// alll the movies in 2018 with rating > 4 
+// sort them by their rating 
+// descending order
+// output title 
+// should return A and A 
+
+const titles = movies
+    .filter (m=> m.year === 2018 && m.rating >=4)
+    .sort((a,b) => a.rating - b.rating)
+    .reverse()
+    .map(m => m.title)
+
+    console.log(titles)
