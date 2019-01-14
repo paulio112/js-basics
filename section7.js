@@ -46,10 +46,33 @@
 
 //interest function - using default
 
-function interest (principle, rate = 3.5, years = 5) { 
-    // rate = rate || 3.5;
-    // years = years || 5;
-    return principle * rate / 100 * years;
-}
+// function interest (principle, rate = 3.5, years = 5) { 
+//     // rate = rate || 3.5;
+//     // years = years || 5;
+//     return principle * rate / 100 * years;
+// }
 
-console.log(interest(10000, 3.5,10));
+// console.log(interest(10000, 3.5,10));
+
+
+// getters and setters example 
+
+const person = {
+    firstName: 'Paul',
+    lastName: 'Southall',
+    get fullname() {
+        return `${person.firstName} ${person.lastName}`
+    }, 
+    set fullName(value) {
+        const parts = value.split(' ');
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+    }
+};
+
+// Getters to access properties in an object 
+// setters to change or mutate properties in an object
+
+person.fullname = 'Hello World';
+
+console.log(person);
