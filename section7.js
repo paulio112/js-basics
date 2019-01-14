@@ -37,9 +37,19 @@
 
 // rest example for the above function 
 
-function sum(discount, ...prices, someValue ) {
-    const total = prices.reduce((a,b) => a + b);
-    return total * (1 - discount);
+// function sum(discount, ...prices ) {
+//     const total = prices.reduce((a,b) => a + b);
+//     return total * (1 - discount);
+// }
+
+// console.log(sum(0.1, 20, 30, 1 ));
+
+//interest function - using default
+
+function interest (principle, rate = 3.5, years = 5) { 
+    // rate = rate || 3.5;
+    // years = years || 5;
+    return principle * rate / 100 * years;
 }
 
-console.log(sum(0.1, 20,30));
+console.log(interest(10000, 3.5,10));
