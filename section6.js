@@ -269,20 +269,47 @@
 
 //Exerice 4 - moving an array element.
 
-const numbers = [1,2,3,4];
-const output = move(numbers,1,2); 
-console.log(output);
+// const numbers = [1,2,3,4];
+// const output = move(numbers,1,2); 
+// console.log(output);
 
-function move (array,index,offset) {
-    const position = index + offset;  
-    if (position >= array.length || position <= 0){
-        console.error('invalid offset');
-        return;
-    }
+// function move (array,index,offset) {
+//     const position = index + offset;  
+//     if (position >= array.length || position <= 0){
+//         console.error('invalid offset');
+//         return;
+//     }
 
-    const output = [...array];
-    const element = output.splice(index,1)[0];
-    output.splice(index + offset, 0, element);
-    return output;
+//     const output = [...array];
+//     const element = output.splice(index,1)[0];
+//     output.splice(index + offset, 0, element);
+//     return output;
+// }
+
+// exercise count occurances in an array.
+
+// const numbers = [1,2,3,4,1]; 
+// const count  = countOccurrences(numbers,1);
+
+// console.log(count);
+
+// function countOccurrences(array, searchElement) {
+//    return array.reduce((accumulator,current) => {
+//         const  occurence = (current === searchElement) ? 1 : 0;  
+//         console.log(accumulator,current,searchElement);
+//         return accumulator + occurence;
+//     }, 0 ); 
+// }
+
+// Get max number in array 
+
+const numbers = [1,2,20,4];
+const max = getMax(numbers);
+
+function getMax(array) {
+   if (array.length === 0) return undefined;
+
+    return array.reduce((a, b) => (a > b) ? a : b); 
 }
 
+console.log(max);
