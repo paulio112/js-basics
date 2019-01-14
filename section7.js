@@ -60,10 +60,9 @@
 const person = {
     firstName: 'Paul',
     lastName: 'Southall',
-    get fullname() {
-        return `${person.firstName} ${person.lastName}`
-    }, 
     set fullName(value) {
+        if (typeof value !== 'string') 
+            throw new Error('Value is not a string');
         const parts = value.split(' ');
         this.firstName = parts[0];
         this.lastName = parts[1];
@@ -72,7 +71,10 @@ const person = {
 
 // Getters to access properties in an object 
 // setters to change or mutate properties in an object
-
-person.fullname = 'Hello World';
-
+try {
+    person.fullname = true; 
+}
+catch(e) {
+    alert(e)
+} 
 console.log(person);
